@@ -23,24 +23,21 @@ class GameLogic:
         # roll = (1, 1, 1, 1, 1, 1)
         roll = sorted(roll)
         counted_roll = Counter(roll)
-        print(counted_roll)
         Counter.elements(counted_roll)
         as_list = list(counted_roll.items())
 
         # straight - 1,2,3,4,5,6 should return correct score
-
+        # can also examine length here len(as_list) == 6
         if as_list == [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1)]:
             current_score += 1500
             as_list = []
 
-        # three_pairs - 3 pairs should return correct score
-
+        # three_pairs - 3 pairs should return correct score, can clean up equalities too
         if len(as_list) == 3 and as_list[1][1] == 2 and as_list[0][1] == 2:
             current_score += 1500
             as_list = []
 
-        # two_trios - 2 sets of 3 should return correct score
-
+        # two_trios - 2 sets of 3 should return correct score, can clean up equalities too
         if len(as_list) == 2 and as_list[0][1] == 3 and as_list[1][1] == 3:
             for i, j in as_list:
                 if j > 2 and i == 1:
