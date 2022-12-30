@@ -1,4 +1,4 @@
-# LAB - Class 06
+# LAB - Class 08
 
 ## Project: ten thousand
 
@@ -6,9 +6,9 @@
 
 ## How to initialize/run your application (where applicable)
 
-``python game_logic.py``
+``python game.py``
 
-- i mean that is the file but not how you run it, its not that kind of file?
+- i think? i run it in my pycharm, can we get instruction on how to fill these out?
 
 ## Tests
 
@@ -17,4 +17,4 @@ How do you run tests?
 Any tests of note?
 - nope
 Describe any tests that you did not complete, skipped, etc
-- think i got em all!
+- the way we were instructed to create this function and the tests supplied were not compatible, so i did them manually 
