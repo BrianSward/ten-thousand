@@ -1,5 +1,3 @@
-# worked with cody delatorre to achieve this code
-
 import random
 from collections import Counter
 
